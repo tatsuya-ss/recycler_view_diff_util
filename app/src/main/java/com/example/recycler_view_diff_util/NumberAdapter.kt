@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recycler_view_diff_util.databinding.AdapterNumberBinding
 
-class NumberAdapter(val list: List<Int>) : RecyclerView.Adapter<NumberAdapter.NumberViewHolder>() {
+class NumberAdapter(var list: List<Int>) : RecyclerView.Adapter<NumberAdapter.NumberViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NumberViewHolder {
         val binding = AdapterNumberBinding.inflate(
